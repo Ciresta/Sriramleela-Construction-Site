@@ -9,63 +9,116 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="./assets/styles/styles.css" rel="stylesheet">
-
 </head>
 
-<body>
-    <section class="relative bg-gray-100 h-screen">
-        <!-- Hero Image with margin and rounded border -->
-        <div class="relative mx-8 my-12 rounded-2xl overflow-hidden">
-            <img src="../assets/images/about-hero.png" alt="Hero Image" class="w-full h-full object-cover">
-            
-            <!-- Overlay -->
-            <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Black overlay with 50% opacity -->
-            
-            <!-- Text Content -->
-            <div class="absolute inset-0 flex flex-col justify-center items-center text-center text-white z-10">
-                <h1 class="text-5xl font-extrabold text-white">About Us</h1>
-                <p class="text-2xl mt-4 text-yellow-400 font-semibold">Know Us More</p>
-            </div>
-        </div>
-    </section>
+<body class="bg-gray-100">
+    <div class="w-full">
     
-    <section>
-        <div class="relative bg-gray-100 h-screen">
-            <!-- Background Image -->
-            <div class="absolute inset-0">
-                <img src="../assets/images/about01.jpg" alt="Background" class="w-full h-full object-cover">
-                <div class="absolute inset-0 bg-opacity-60"></div> <!-- Overlay for readability -->
+        <!-- Navbar -->
+        <header class="bg-black bg-opacity-50 text-white px-8 py-6 fixed w-full z-10">
+          <div class="flex justify-between items-center">
+            <!-- Logo and tagline -->
+            <div>
+              <h1 class="text-xl font-bold agbalumo-regular">
+                Sriramleela <span style="color: #FEF000;">Infrasolutions</span>
+              </h1>
+              <p class="text-sm">We build beautiful wonders every time</p>
             </div>
     
-            <!-- Text Content -->
-            <div class="relative z-10 flex flex-col justify-center h-full p-8 text-white space-y-12">
-                <div class="flex justify-end w-full">
-                    <div class="text-right max-w-xl">
-                        <h2 class="text-4xl font-bold text-black">Name</h2>
-                        <p class="text-xl text-black mt-4 w-80">Skilled and dedicated, we excel in crafting reliable and lasting solutions tailored to meet diverse needs.</p>
-                    </div>
-                </div>
+            <!-- Hamburger for mobile -->
+            <div class="md:hidden">
+              <button id="menu-toggle" class="focus:outline-none">
+                <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+              </button>
             </div>
-        </div>
-    </section>
     
-    <section>
-        <div class="relative bg-gray-100 h-screen">
-            <!-- Background Image -->
-            <div class="absolute inset-0">
-                <img src="../assets/images/about02.png" alt="Background" class="w-full h-full object-cover">
-                <div class="absolute"></div> <!-- Overlay for readability -->
-            </div>
+            <!-- Navbar links -->
+            <nav id="nav-links" class="hidden md:flex space-x-16 text-white text-lg">
+              <a href="#" class="hover:text-yellow-400">Home</a>
+              <a href="#" class="hover:text-yellow-400">Products</a>
+              <a href="#" class="hover:text-yellow-400">About Us</a>
+              <a href="#" class="hover:text-yellow-400">Contact Us</a>
+            </nav>
+          </div>
+    
+          <!-- Mobile Menu -->
+          <div id="mobile-menu" class="hidden md:hidden flex-col space-y-4 mt-4">
+            <a href="#" class="block hover:text-yellow-400">Home</a>
+            <a href="#" class="block hover:text-yellow-400">Products</a>
+            <a href="#" class="block hover:text-yellow-400">About Us</a>
+            <a href="#" class="block hover:text-yellow-400">Contact Us</a>
+          </div>
+        </header>
+    
+    
+        <!-- Hero Section -->
+        <section class="relative">
+          <img src="../assets/images/about-hero.png" alt="Construction Background" class="w-full h-[600px] object-cover">
+          <div
+            class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center text-left text-white px-8 md:px-16">
+            <h2 class="text-lg md:text-2xl font-semibold"></h2>
+            <h1 class="text-4xl md:text-6xl font-bold mt-3 anton-regular">About us</h1>
+            <p class="mt-4 text-base font-bold md:text-lg">Cement and building product</p>
+            <!-- <a href="#"
+              class="mt-6 w-36 bg-yellow-400 text-center text-black px-8 py-4 font-bold rounded-lg hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-600">Explore</a> -->
+    
+          </div>
+    
+        </section>
 
-            <!-- Text Content -->
-            <div class="relative z-10 flex flex-col justify-center h-full p-8 text-white space-y-12">
-                <div>
+    <!-- Desktop View Section 1 -->
+    <section class="relative bg-gray-100 h-screen hidden md:block">
+        <div class="absolute inset-0">
+            <img src="../assets/images/about01.jpg" alt="Background" class="w-full h-full object-cover">
+        </div>
+        <div class="relative z-10 flex flex-col justify-center h-full p-8 text-white space-y-12">
+            <div class="flex justify-end w-full">
+                <div class="text-right max-w-xl">
                     <h2 class="text-4xl font-bold text-black">Name</h2>
-                    <p class="text-xl text-black w-64">Skilled and dedicated, we excel in crafting reliable and lasting solutions tailored to meet diverse needs. </p>
+                    <p class="text-xl text-black mt-4 w-80">Skilled and dedicated, we excel in crafting reliable and lasting solutions tailored to meet diverse needs.</p>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Mobile View Section 1 -->
+    <section class="block md:hidden bg-gray-100 py-8">
+        <div class="relative w-full">
+            <img src="../assets/images/aboutme.jpg" alt="About Section 1" class="w-full object-cover rounded-lg">
+        </div>
+        <div class="p-4 text-center">
+            <h2 class="text-3xl font-bold text-black">Name</h2>
+            <p class="text-lg text-gray-700 mt-4">Skilled and dedicated, we excel in crafting reliable and lasting solutions tailored to meet diverse needs.</p>
+        </div>
+    </section>
+
+    <!-- Desktop View Section 2 -->
+    <section class="relative bg-gray-100 h-screen hidden md:block">
+        <div class="absolute inset-0">
+            <img src="../assets/images/about02.png" alt="Background" class="w-full h-full object-cover">
+        </div>
+        <div class="relative z-10 flex flex-col justify-center h-full p-8 text-white space-y-12">
+            <div>
+                <h2 class="text-4xl font-bold text-black">Name</h2>
+                <p class="text-xl text-black w-64">Skilled and dedicated, we excel in crafting reliable and lasting solutions tailored to meet diverse needs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile View Section 2 -->
+    <section class="block md:hidden bg-gray-100 py-8">
+        <div class="relative w-full">
+            <img src="../assets/images/aboutme.jpg" alt="About Section 2" class="w-full object-cover rounded-lg">
+        </div>
+        <div class="p-4 text-center">
+            <h2 class="text-3xl font-bold text-black">Name</h2>
+            <p class="text-lg text-gray-700 mt-4">Skilled and dedicated, we excel in crafting reliable and lasting solutions tailored to meet diverse needs.</p>
+        </div>
+    </section>
+    </div>
 </body>
 
 </html>
