@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="./assets/styles/styles.css" rel="stylesheet">
 </head>
@@ -14,44 +14,47 @@
 <body class="bg-gray-100">
     <div class="w-full">
     
-        <!-- Navbar -->
-        <header class="bg-black bg-opacity-50 text-white px-8 py-6 fixed w-full z-40">
-          <div class="flex justify-between items-center">
-            <!-- Logo and tagline -->
-            <div>
+       <!-- Navbar -->
+       <header class="bg-black bg-opacity-50 text-white px-8 py-6 fixed w-full z-10">
+        <div class="flex justify-between items-center">
+          <!-- Logo and tagline -->
+          <div>
+            <a href="/">
               <h1 class="text-xl font-bold agbalumo-regular">
                 Sriramleela <span style="color: #FEF000;">Infrasolutions</span>
               </h1>
               <p class="text-sm">We build beautiful wonders every time</p>
-            </div>
-    
-            <!-- Hamburger for mobile -->
-            <div class="md:hidden">
-              <button id="menu-toggle" class="focus:outline-none">
-                <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                  stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-                </svg>
-              </button>
-            </div>
-    
-            <!-- Navbar links -->
-            <nav id="nav-links" class="hidden md:flex space-x-16 text-white text-lg">
-              <a href="/" class="hover:text-yellow-400">Home</a>
-              <a href="products.html" class="hover:text-yellow-400">Products</a>
-              <a href="about.html" class="hover:text-yellow-400 text-yellow-400">About Us</a>
-              <a href="contact.html" class="hover:text-yellow-400">Contact Us</a>
-            </nav>
+            </a>
           </div>
-    
-          <!-- Mobile Menu -->
-          <div id="mobile-menu" class="hidden md:hidden flex-col space-y-4 mt-4">
-            <a href="/" class="hover:text-yellow-400">Home</a>
+  
+          <!-- Hamburger for mobile -->
+          <div class="md:hidden">
+            <button id="menu-toggle" class="focus:outline-none">
+              <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+              </svg>
+            </button>
+          </div>
+  
+          <!-- Navbar links -->
+          <nav id="nav-links" class="hidden md:flex space-x-16 text-white text-lg mr-16">
+            <a href="/" class="hover:text-yellow-400 ">Home</a>
             <a href="products.html" class="hover:text-yellow-400">Products</a>
-            <a href="about.html" class="hover:text-yellow-400  text-yellow-400">About Us</a>
+            <a href="about.html" class="hover:text-yellow-400 text-yellow-400">About Us</a>
             <a href="contact.html" class="hover:text-yellow-400">Contact Us</a>
-          </div>
-        </header>
+          </nav>
+        </div>
+  
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden flex-col space-y-4 mt-4">
+          <a href="/" class="block hover:text-yellow-400">Home</a>
+          <a href="products.html" class="block hover:text-yellow-400">Products</a>
+          <a href="about.html" class="block hover:text-yellow-400 text-yellow-400">About Us</a>
+          <a href="contact.html" class="block hover:text-yellow-400">Contact Us</a>
+        </div>
+      </header>
+  
     
     
         <!-- Hero Section -->
@@ -69,20 +72,24 @@
     
         </section>
 
-    <!-- Desktop View Section 1 -->
-    <section class="relative bg-gray-100 h-screen hidden md:block">
-        <div class="absolute inset-0">
-            <img src="../assets/images/about01.jpg" alt="Background" class="w-full h-full object-cover">
+      <!-- Desktop View Section 1 -->
+      <section class="relative bg-gray-100 h-screen hidden md:block">
+        <!-- Image Section -->
+        <div class="relative h-full">
+          <img src="../assets/images/about01.jpg" alt="Background" class="w-3/4 h-full object-cover mx-auto">
         </div>
-        <div class="relative z-10 flex flex-col justify-center h-full p-8 text-white space-y-12">
-            <div class="flex justify-end w-full">
-                <div class="text-right max-w-xl">
-                    <h2 class="text-4xl font-bold text-black">Name</h2>
-                    <p class="text-xl text-black mt-4 w-80">Skilled and dedicated, we excel in crafting reliable and lasting solutions tailored to meet diverse needs.</p>
-                </div>
-            </div>
+        
+        <!-- Text Section -->
+        <div class="absolute inset-0 flex flex-col justify-center items-center absolute left-[100vh] p-8 text-white">
+          <div class="text-left max-w-xl px-6 py-8 rounded-md">
+            <h2 class="text-4xl font-bold text-black">Name</h2>
+            <p class="text-xl text-black mt-4 w-[190px]">
+              Skilled and dedicated, we excel in crafting reliable and lasting solutions tailored to meet diverse needs.
+            </p>
+          </div>
         </div>
-    </section>
+      </section>
+      
 
     <!-- Mobile View Section 1 -->
     <section class="block md:hidden bg-gray-100 py-8">
@@ -97,15 +104,21 @@
 
     <!-- Desktop View Section 2 -->
     <section class="relative bg-gray-100 h-screen hidden md:block">
-        <div class="absolute inset-0">
-            <img src="../assets/images/about02.png" alt="Background" class="w-full h-full object-cover">
+        <!-- Text Section -->
+        <div class="absolute inset-0 flex flex-col justify-center items-center absolute z-10 right-[100vh] p-8 text-white">
+          <div class="text-left max-w-xl px-6 py-8 rounded-md">
+            <h2 class="text-4xl font-bold text-black">Name</h2>
+            <p class="text-xl text-black mt-4 w-[190px]">
+              Skilled and dedicated, we excel in crafting reliable and lasting solutions tailored to meet diverse needs.
+            </p>
+          </div>
         </div>
-        <div class="relative z-10 flex flex-col justify-center h-full p-8 text-white space-y-12">
-            <div>
-                <h2 class="text-4xl font-bold text-black">Name</h2>
-                <p class="text-xl text-black w-64">Skilled and dedicated, we excel in crafting reliable and lasting solutions tailored to meet diverse needs.</p>
-            </div>
-        </div>
+      <!-- Image Section -->
+      <div class="relative h-full">
+        <img src="../assets/images/about02.png" alt="Background" class="w-3/4 h-full object-cover mx-auto">
+      </div>
+      
+    
     </section>
 
     <!-- Mobile View Section 2 -->
@@ -129,7 +142,13 @@
               Sriramleela <span style="color: #FEF000;">Infrasolutions</span>
             </h2>
             <p class="text-sm mb-4">We provide the best services to help your business grow. Focused on innovation, reliability, and customer satisfaction.</p>
-            
+            <p class="text-lg font-bold mb-4 flex items-center">
+              <i>Authorized Distributer for</i>
+              <span class="ml-2">
+                <img src="./assets/images/footer-ultratech.png" class="h-8 w-auto">
+              </span>
+            </p>
+                     
             <!-- Social Media Icons -->
             <div class="flex space-x-6">
               <a href="#" class="text-gray-400 hover:text-white">
@@ -175,5 +194,11 @@
     </footer>
     </div>
 </body>
+<script>
+  document.getElementById("menu-toggle").addEventListener("click", function () {
+    const mobileMenu = document.getElementById("mobile-menu");
+    mobileMenu.classList.toggle("hidden");
+  });
 
+</script>
 </html>
