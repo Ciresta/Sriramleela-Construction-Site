@@ -594,7 +594,7 @@
 
             // Add products
             const productGrid = document.createElement('div');
-            productGrid.className = 'grid grid-cols-4 gap-6';
+            productGrid.className = 'grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6'; // Responsive grid
 
             categories[category].forEach(product => {
                 const productCard = document.createElement('div');
@@ -611,7 +611,7 @@
                 <h3 class="product-title">${product.name}</h3>
                 <div class="text-muted mb-4">
                     <strong>SKUs:</strong>
-                    <div class="sku-container flex items-center space-x-4">
+                    <div class="sku-container flex flex-wrap gap-4">
                         ${product.skus.map(sku => `
                             <span class="bg-gray-100 px-3 py-1 rounded text-sm shadow">${sku}</span>
                         `).join('')}
