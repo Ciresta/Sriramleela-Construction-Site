@@ -15,114 +15,114 @@
 <style>
   /* Custom Modal Styles */
   .modal {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      justify-content: center;
-      align-items: center;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
   }
 
   .modal-content {
-      background-color: white;
-      padding: 20px;
-      border-radius: 8px;
-      width: 80%;
-      max-width: 500px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 
   .modal.active {
-      display: flex;
+    display: flex;
   }
 
   .close {
-      color: gray;
-      font-size: 24px;
-      font-weight: bold;
-      cursor: pointer;
+    color: gray;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
   }
 
   /* Card Styling */
   .product-card {
-      background-color: #fff;
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
   .product-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
   }
 
   .product-image {
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-      transition: opacity 0.3s ease;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
   }
 
   .product-image:hover {
-      opacity: 0.8;
+    opacity: 0.8;
   }
 
   .product-info {
-      padding: 16px;
+    padding: 16px;
   }
 
   .product-title {
-      font-size: 1.25rem;
-      font-weight: bold;
-      color: #333;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
   }
 
   .product-btn {
-      background-color: #4a4a4a;
-      color: white;
-      padding: 8px 16px;
-      border-radius: 5px;
-      margin-top: 10px;
-      font-weight: bold;
-      text-transform: uppercase;
-      cursor: pointer;
+    background-color: #4a4a4a;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
   }
 
   .product-btn:hover {
-      background-color: #3a3a3a;
+    background-color: #3a3a3a;
   }
 
   .sku-container span {
-      background-color: #e1e1e1;
-      padding: 6px 12px;
-      border-radius: 4px;
-      margin-right: 8px;
-      color: #333;
+    background-color: #e1e1e1;
+    padding: 6px 12px;
+    border-radius: 4px;
+    margin-right: 8px;
+    color: #333;
   }
 
   .text-muted {
-      color: #666;
+    color: #666;
   }
 
   /* Grid Layout */
   .grid-container {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      /* 4 products per row */
-      gap: 16px;
-      padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 products per row */
+    gap: 16px;
+    padding: 20px;
   }
 
   .sku-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      max-width: 100%;
-      /* Ensure the container takes up full width */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 100%;
+    /* Ensure the container takes up full width */
   }
 </style>
 
@@ -138,7 +138,7 @@
             <h1 class="text-xl font-bold agbalumo-regular">
               Sriramleela <span style="color: #FEF000;">Infrasolutions</span>
             </h1>
-            <p class="text-sm">We build beautiful wonders every time</p>
+            <p class="text-sm">Your Trusted Partner for Premium Cement and Concrete Solutions</p>
           </a>
         </div>
 
@@ -205,19 +205,57 @@
 
 
 
-    <!-- ReadyMix Concrete Section -->
-    <section class="relative flex flex-col md:mt-8 md:flex-row items-center justify-center text-black">
-      <!-- Truck Image -->
-      <img src="../assets/images/products/truck.svg" alt="Concrete Truck"
-        class="w-full max-w-xs mx-auto md:w-1/2 md:max-w-sm md:mx-0 md:absolute left-8 md:top-1/2 md:-translate-y-1/2 z-10">
+<!-- ReadyMix Concrete Section -->
+<section class="relative flex flex-col md:mt-8 md:flex-row items-center justify-center text-black">
+  <!-- Truck Image -->
+  <!-- Yellow Background and Text -->
+  <div class="flex-1 ml-0 md:ml-16 mt-6 md:mt-0 bg-yellow-300 rounded-2xl w-full px-6 py-8 relative z-0">
+    <h2 class="text-3xl sm:text-4xl md:text-5xl text-center md:text-center font-bold text-black mb-4">
+      We Provide Readymix Concrete
+    </h2>
 
-      <!-- Yellow Background and Text -->
-      <div class="flex-1 ml-0 md:ml-16 mt-6 md:mt-0 bg-yellow-300 rounded-2xl h-36 w-full px-6 py-8 relative z-0">
-        <h2 class="text-3xl sm:text-4xl md:text-5xl text-center md:text-right font-bold text-black">
-          We Provide Readymix Concrete
-        </h2>
+    <!-- Services Section -->
+    <div class="flex flex-wrap justify-center gap-4 mt-6">
+      <div class="bg-yellow-500 text-white text-lg font-bold py-3 px-6 rounded-full shadow-lg">
+        Residential Buildings
       </div>
-    </section>
+      <div class="bg-yellow-500 text-white text-lg font-bold py-3 px-6 rounded-full shadow-lg">
+        Commercial Structures
+      </div>
+      <div class="bg-yellow-500 text-white text-lg font-bold py-3 px-6 rounded-full shadow-lg">
+        Roads
+      </div>
+      <div class="bg-yellow-500 text-white text-lg font-bold py-3 px-6 rounded-full shadow-lg">
+        Bridges
+      </div>
+      <div class="bg-yellow-500 text-white text-lg font-bold py-3 px-6 rounded-full shadow-lg">
+        Pavements
+      </div>
+      <div class="bg-yellow-500 text-white text-lg font-bold py-3 px-6 rounded-full shadow-lg">
+        Industrial Facilities
+      </div>
+      <div class="bg-yellow-500 text-white text-lg font-bold py-3 px-6 rounded-full shadow-lg">
+        Foundations
+      </div>
+      <div class="bg-yellow-500 text-white text-lg font-bold py-3 px-6 rounded-full shadow-lg">
+        Slabs
+      </div>
+      <div class="bg-yellow-500 text-white text-lg font-bold py-3 px-6 rounded-full shadow-lg">
+        Beams
+      </div>
+      <div class="bg-yellow-500 text-white text-lg font-bold py-3 px-6 rounded-full shadow-lg">
+        Columns
+      </div>
+    </div>
+  </div><br>
+  <!-- <img src="../assets/images/products/truck.svg" alt="Concrete Truck"
+    class="w-full max-w-xs mx-auto md:w-1/2 md:max-w-sm md:mx-0 md:absolute left-8 md:top-1/2 md:-translate-y-1/2 z-10">  -->
+</section>
+
+
+
+
+
     <section>
       <!-- Dynamic Content Container -->
       <div id="contentContainer" class="space-y-12 p-6 mt-8"></div>
@@ -258,8 +296,48 @@
       </div>
     </section>
 
-
-
+    <section class="bg-white py-8 px-4">
+      <!-- Section Heading -->
+      <h1 class="text-center text-4xl font-bold text-black mb-6">Brochures</h1>
+    
+      <!-- Brochure Links -->
+      <a target="_blank" href="https://www.ultratechcement.com/content/dam/ultratechcementwebsite/pdf/greenvantage-brochure.pdf" class="flex items-center justify-between text-center text-2xl font-bold bg-white text-black py-3 px-4 rounded border border-gray-300 hover:bg-yellow-300 hover:text-black transition-colors mb-4">
+        <span class="flex items-center">
+          <i class="fas fa-file-alt mr-3"></i> UltraTech Green Vantage
+        </span>
+        <i class="fas fa-arrow-right"></i>
+      </a>
+    
+      <a target="_blank" href="https://5.imimg.com/data5/SELLER/Doc/2022/7/QD/DR/MB/42446133/50-kg-ultra-tech-cement.pdf" class="flex items-center justify-between text-center text-2xl font-bold bg-white text-black py-3 px-4 rounded border border-gray-300 hover:bg-yellow-300 hover:text-black transition-colors mb-4">
+        <span class="flex items-center">
+          <i class="fas fa-file-alt mr-3"></i> UltraTech Cement
+        </span>
+        <i class="fas fa-arrow-right"></i>
+      </a>
+    
+      <a target="_blank" href="https://www.ultratechcement.com/content/dam/ultratechcementwebsite/products/vac-product-brochure/vac-brochure-zip.pdf" class="flex items-center justify-between text-center text-2xl font-bold bg-white text-black py-3 px-4 rounded border border-gray-300 hover:bg-yellow-300 hover:text-black transition-colors mb-4">
+        <span class="flex items-center">
+          <i class="fas fa-file-alt mr-3"></i> Products Brochure
+        </span>
+        <i class="fas fa-arrow-right"></i>
+      </a>
+    
+      <a target="_blank" href="https://www.ultratechcement.com/content/dam/ultratechcementwebsite/products/vac-product-brochure/05-vac-e-brochure-ifloors.pdf" class="flex items-center justify-between text-center text-2xl font-bold bg-white text-black py-3 px-4 rounded border border-gray-300 hover:bg-yellow-300 hover:text-black transition-colors mb-4">
+        <span class="flex items-center">
+          <i class="fas fa-file-alt mr-3"></i> VAC Product Brochure
+        </span>
+        <i class="fas fa-arrow-right"></i>
+      </a>
+    
+      <a target="_blank" href="https://5.imimg.com/data5/RL/AQ/MY-10974491/ultratech-cement.pdf" class="flex items-center justify-between text-center text-2xl font-bold bg-white text-black py-3 px-4 rounded border border-gray-300 hover:bg-yellow-300 hover:text-black transition-colors">
+        <span class="flex items-center">
+          <i class="fas fa-file-alt mr-3"></i> UltraTech Cement Products
+        </span>
+        <i class="fas fa-arrow-right"></i>
+      </a>
+    </section>
+    
+    
 
 
   </div>
@@ -614,10 +692,10 @@
         skus: ["25 kg"],
         coverage: "At actuals, depending on application needs."
       },
- 
+
     ],
     "PLASTER & MORTAR": [
-      
+
       {
         id: 20,
         name: "UltraTech Super Stucco",
@@ -757,16 +835,42 @@
   };
   const contentContainer = document.getElementById('contentContainer');
   const modalTemplate = document.getElementById('productModalTemplate');
+  const subheadings = [
+    'Widely used in the construction of residential buildings, commercial structures, roads, bridges, pavements, and industrial facilities, foundations, slabs, beams, and columns.',
+    'Securely fixing tiles to walls and floors, ensuring a long-lasting finish.',
+    'Innovative products designed for every need.',
+    'Specialized materials for repairing and rehabilitating damaged structures',
+    'Solutions for smooth surfaces and strong bonding',
+    'Precision-engineered grouts for industrial applications',
+    'Durable screed solutions for leveling and finishing floors, ideal for creating smooth, even surfaces',
+    'lightweight Autoclaved Aerated Concrete (AAC) blocks for cost-effective, quick, and sustainable construction.'
+  ];
 
   // Render categories and products
-  Object.keys(categories).forEach(category => {
-    // Add category heading
+  Object.keys(categories).forEach((category, index) => {
+    // Create a container for the category heading and subheading
+    const categoryContainer = document.createElement('div');
+    categoryContainer.className = 'mb-6 bg-[#ffed00] rounded-3xl p-4'; // Adds margin to the bottom and padding for better spacing
+
+    // Add category heading (h2)
     const categoryHeading = document.createElement('h2');
     categoryHeading.textContent = category;
-    categoryHeading.className = 'text-4xl font-bold mb-6';
-    contentContainer.appendChild(categoryHeading);
+    categoryHeading.className = 'text-4xl font-bold mb-2 flex align-center justify-center items-center rounded-3xl h-16';
 
-    // Add products
+    // Add dynamic subheading from the subheadings array based on the index
+    const categorySubText = document.createElement('p');
+    categorySubText.style.fontStyle = "italic";
+    categorySubText.textContent = subheadings[index]; // Get the subheading based on the index
+    categorySubText.className = 'text-sm text-black font-bold mt-[-12px] text-center'; // Small text below category heading
+
+    // Append both the category heading and subheading to the category container
+    categoryContainer.appendChild(categoryHeading);
+    categoryContainer.appendChild(categorySubText);
+
+    // Add the category container to the content container
+    contentContainer.appendChild(categoryContainer);
+
+    // Add products for each category
     const productGrid = document.createElement('div');
     productGrid.className = 'grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6'; // Responsive grid
 
@@ -776,72 +880,36 @@
 
       // Add product image
       const productImage = `
-      <img src="${product.image}" alt="${product.name}" class="product-image">
+    <img src="${product.image}" alt="${product.name}" class="product-image">
   `;
 
       // Add product details
       const productDetails = `
-      <div class="product-info">
-          <h3 class="product-title">${product.name}</h3>
-          <div class="text-muted mb-4">
-              <strong>SKUs:</strong>
-              <div class="sku-container flex flex-wrap gap-4">
-                  ${product.skus.map(sku => `
-                      <span class="bg-gray-100 px-3 py-1 rounded text-sm shadow">${sku}</span>
-                  `).join('')}
-              </div>
-          </div>
-          <p><strong>Coverage:</strong> ${product.coverage}</p>
-          <button class="showModalBtn product-btn" data-product-id="${product.id}">
-              Show Details
-          </button>
-      </div>
+    <div class="product-info">
+        <h3 class="product-title">${product.name}</h3>
+        <div class="text-muted mb-4">
+            <strong>SKUs:</strong>
+            <div class="sku-container flex flex-wrap gap-4">
+                ${product.skus.map(sku => `
+                    <span class="bg-gray-100 px-3 py-1 rounded text-sm shadow">${sku}</span>
+                `).join('')}
+            </div>
+        </div>
+        <p><strong>Coverage:</strong> ${product.coverage}</p>
+        <button class="showModalBtn product-btn" data-product-id="${product.id}">
+            Show Details
+        </button>
+    </div>
   `;
 
       productCard.innerHTML = productImage + productDetails;
       productGrid.appendChild(productCard);
     });
 
+    // Append the product grid under the category
     contentContainer.appendChild(productGrid);
   });
 
-  // Add event listeners dynamically after rendering
-  document.body.addEventListener('click', event => {
-    if (event.target.classList.contains('showModalBtn')) {
-      const productId = event.target.dataset.productId;
-
-      // Find product
-      const product = Object.values(categories)
-        .flat()
-        .find(p => p.id === parseInt(productId));
-
-      if (product) {
-        // Create modal
-        const modal = modalTemplate.cloneNode(true);
-        modal.classList.add('active');
-        modal.removeAttribute('id');
-
-        // Populate modal
-        modal.querySelector('.modal-body ul').innerHTML = product.features
-          .map(feature => `<li>${feature}</li>`)
-          .join('');
-        modal.querySelector('.sku-container').innerHTML = product.skus
-          .map(sku => `<span class="bg-gray-100 text-gray-800 px-3 py-1 rounded text-sm shadow">${sku}</span>`)
-          .join(' ');
-        modal.querySelector('.coverage').textContent = product.coverage;
-
-        // Close modal
-        modal.querySelector('.close').addEventListener('click', () => {
-          modal.remove();
-        });
-        modal.querySelector('.closeBtn').addEventListener('click', () => {
-          modal.remove();
-        });
-
-        document.body.appendChild(modal);
-      }
-    }
-  });
 </script>
 
 </html>
