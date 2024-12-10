@@ -14,7 +14,23 @@
   <script src="./assets/js/script.js"></script>
 
 </head>
+<script>
+  let currentImage = 0;
+  const images = [
+      './assets/images/home-bag/grey.png',
+      './assets/images/home-bag/slag.png',
+      './assets/images/home-bag/portland.png'
+  ];
 
+  function changeImage() {
+      const imgElement = document.getElementById('carousel-image');
+      currentImage = (currentImage + 1) % images.length;
+      imgElement.src = images[currentImage];
+  }
+
+  // Change the image every 3 seconds
+  setInterval(changeImage, 3000);
+</script>
 <body class="fo nt-roboto ">
   <div class="w-full">
 
@@ -79,54 +95,27 @@
 
     <!-- Welcome Section -->
 <!-- Welcome Section -->
-<section class="relative w-full h-screen bg-cover bg-center bg-no-repeat"
-  style="background-image: url('./assets/images/homebg3.png');">
-  <!-- Content -->
-  <div class="absolute inset-0 flex items-center px-4 sm:px-8 lg:px-16 text-black">
-    <!-- Left Content -->
-    <div class="max-w-3xl mx-auto lg:mx-0 text-center lg:text-left w-full lg:w-2/3"
-      data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
-      <!-- Mobile-Only Placeholder Image -->
-      <img src="./assets/images/cemant.png" alt="Placeholder Image" class="block sm:hidden mx-auto mb-4" />
-      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-semibold">
-        About our Product
-      </h2>
-      <p class="mt-4 text-sm sm:text-base lg:text-lg">
-        UltraTech Cement, a flagship brand of the Aditya Birla Group, is India’s largest producer of grey cement, white cement, and ready-mix concrete (RMC).
-      </p>
-      <p class="mt-4 text-sm sm:text-base lg:text-lg">
-        Renowned for its superior quality, durability, and innovation, UltraTech offers specialized solutions for all construction needs. With a strong focus on sustainability, it ensures reliable, eco-friendly products for residential, commercial, and industrial projects worldwide.
-      </p>
-    </div>
 
-    <!-- Right Swiper -->
-    <div class="hidden lg:block w-full lg:w-1/3" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">
-      <!-- Swiper Container -->
-      <div class="swiper">
-        <div class="swiper-wrapper">
-          <!-- Slide 1 -->
-          <div class="swiper-slide">
-            <img src="./assets/images/slide1.jpg" alt="Slide 1" class="w-full h-auto rounded-lg shadow-lg">
+    <!-- Standalone Section -->
+    <section class="relative bg-gradient-to-r from-yellow-100 via-yellow-200 to-yellow-300 py-12 px-6">
+      <div class="container mx-auto flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0 md:space-x-8">
+          <!-- Left Section - Text -->
+          <div class="w-full md:w-1/2 text-center md:text-left">
+              <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold mb-4 text-gray-800">
+                  About Our Product
+              </h2>
+              <p class="text-sm sm:text-base lg:text-lg text-gray-700 leading-relaxed">
+                  UltraTech Cement, a flagship brand of the Aditya Birla Group, is India’s largest producer of grey cement, white cement, and ready-mix concrete (RMC). Renowned for its superior quality, durability, and innovation, UltraTech offers specialized solutions for all construction needs. With a strong focus on sustainability, it ensures reliable, eco-friendly products for residential, commercial, and industrial projects worldwide.
+              </p>
           </div>
-          <!-- Slide 2 -->
-          <div class="swiper-slide">
-            <img src="./assets/images/slide2.jpg" alt="Slide 2" class="w-full h-auto rounded-lg shadow-lg">
+
+          <!-- Right Section - Image Carousel -->
+          <div class="w-full md:w-1/2 flex justify-center">
+              <img id="carousel-image" src="./assets/images/home-bag/grey.png"
+                  alt="Image Carousel" class="w-full max-w-lg h-auto object-cover rounded-lg shadow-lg">
           </div>
-          <!-- Slide 3 -->
-          <div class="swiper-slide">
-            <img src="./assets/images/slide3.jpg" alt="Slide 3" class="w-full h-auto rounded-lg shadow-lg">
-          </div>
-        </div>
-        <!-- Swiper Navigation -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <!-- Swiper Pagination -->
-        <div class="swiper-pagination"></div>
       </div>
-    </div>
-  </div>
-</section>
-
+  </section>
 <!-- Swiper CSS -->
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 <!-- Swiper JS -->
