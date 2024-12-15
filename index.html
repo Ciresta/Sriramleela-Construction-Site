@@ -19,7 +19,8 @@
   const images = [
       './assets/images/home-bag/grey.png',
       './assets/images/home-bag/slag.png',
-      './assets/images/home-bag/portland.png'
+      './assets/images/home-bag/portland.png',
+      './assets/images/home-bag/yellow2.png'
   ];
 
   function changeImage() {
@@ -60,8 +61,8 @@
         <!-- Navbar links -->
         <nav id="nav-links" class="hidden md:flex space-x-16 text-white text-lg mr-16">
           <a href="/" class="hover:text-yellow-400 text-yellow-400">Home</a>
-          <a href="products.html" class="hover:text-yellow-400">Products</a>
           <a href="about.html" class="hover:text-yellow-400">About Us</a>
+          <a href="products.html" class="hover:text-yellow-400">Products</a>
           <a href="contact.html" class="hover:text-yellow-400">Contact Us</a>
         </nav>
       </div>
@@ -69,8 +70,8 @@
       <!-- Mobile Menu -->
       <div id="mobile-menu" class="hidden md:hidden flex-col space-y-4 mt-4">
         <a href="/" class="block hover:text-yellow-400 text-yellow-400">Home</a>
-        <a href="products.html" class="block hover:text-yellow-400">Products</a>
         <a href="about.html" class="block hover:text-yellow-400">About Us</a>
+        <a href="products.html" class="block hover:text-yellow-400">Products</a>
         <a href="contact.html" class="block hover:text-yellow-400">Contact Us</a>
       </div>
     </header>
@@ -97,7 +98,7 @@
 <!-- Welcome Section -->
 
     <!-- Standalone Section -->
-    <section class="relative bg-gradient-to-r from-yellow-100 via-yellow-200 to-yellow-300 py-12 px-6">
+    <section class="relative bg-[#fef000] py-12 px-6">
       <div class="container mx-auto flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0 md:space-x-8">
           <!-- Left Section - Text -->
           <div class="w-full md:w-1/2 text-center md:text-left">
@@ -112,7 +113,7 @@
           <!-- Right Section - Image Carousel -->
           <div class="w-full md:w-1/2 flex justify-center">
               <img id="carousel-image" src="./assets/images/home-bag/grey.png"
-                  alt="Image Carousel" class="w-full max-w-lg h-auto object-cover rounded-lg shadow-lg">
+                  alt="Image Carousel" class="w-full max-w-lg h-auto object-cover rounded-lg">
           </div>
       </div>
   </section>
@@ -197,25 +198,26 @@
         <!-- Construction Management -->
         <div class="space-y-4 text-center sm:text-left" data-aos="fade-up" data-aos-duration="1500"
           data-aos-delay="500">
-          <h2 class="text-3xl sm:text-4xl font-bold text-black">Construction Management</h2>
-          <p class="text-lg sm:text-xl text-black">XYZ XYZ XYZ XYZ XYZ XYZ XYZ</p>
-          <button class="text-blue-300 text-lg hover:underline">Show More</button>
+          <h2 class="text-3xl sm:text-4xl font-bold text-black">Waterproofing</h2>
+          <p class="text-lg sm:text-xl text-black md:w-1/2">UltraTech's waterproofing solutions ensure durability and protection against moisture, perfect for residential and commercial structures.</p>
+          <a href="products.html" class="text-blue-300 text-lg hover:underline">Show More</a>
         </div>
 
         <!-- Heavy Machinery -->
         <div class="space-y-4 text-center sm:text-left" data-aos="fade-up" data-aos-duration="1500"
           data-aos-delay="500">
-          <h2 class="text-3xl sm:text-4xl font-bold text-black">Heavy Machinery</h2>
-          <p class="text-lg sm:text-xl text-black">XYZ XYZ XYZ XYZ XYZ XYZ XYZ XYZ</p>
-          <button class="text-blue-300 text-lg hover:underline">Show More</button>
+          <h2 class="text-3xl sm:text-4xl font-bold text-black">Tile Adhesive</h2>
+          <p class="text-lg sm:text-xl text-black md:w-1/2">UltraTech Tile Adhesive offers strong bonding for tiles, ensuring lasting durability and ease of application for any project.</p>
+          <a href="products.html" class="text-blue-300 text-lg hover:underline">Show More</a>
+
         </div>
 
         <!-- Cement Distribution -->
         <div class="space-y-4 text-center sm:text-left" data-aos="fade-up" data-aos-duration="1500"
           data-aos-delay="500">
-          <h2 class="text-3xl sm:text-4xl font-bold text-black">Cement Distribution</h2>
-          <p class="text-lg sm:text-xl text-black">XYZ XYZ XYZ XYZ XYZ XYZ XYZ</p>
-          <button class="text-blue-300 text-lg hover:underline">Show More</button>
+          <h2 class="text-3xl sm:text-4xl font-bold text-black">Repair & Rehabilitation</h2>
+          <p class="text-lg sm:text-xl text-black md:w-1/2">Specially designed UltraTech products for structural repairs and rehabilitation to restore strength and longevity.</p>
+          <a href="products.html" class="text-blue-300 text-lg hover:underline">Show More</a>
         </div>
       </div>
     </div>
@@ -313,7 +315,7 @@
           </p>
 
           <!-- Social Media Icons -->
-          <div class="flex space-x-6">
+          <!-- <div class="flex space-x-6">
             <a href="#" class="text-gray-400 hover:text-white">
               <i class="fab fa-facebook-f"></i>
             </a>
@@ -326,17 +328,17 @@
             <a href="#" class="text-gray-400 hover:text-white">
               <i class="fab fa-linkedin-in"></i>
             </a>
-          </div>
+          </div> -->
         </div>
 
         <!-- Quick Links Section -->
         <div class="w-full md:w-1/3 mb-8 md:mb-0">
           <h3 class="text-lg font-semibold mb-3" style="color: #FEF000;">Quick Links</h3>
           <ul class="space-y-2">
-            <li><a href="#" class="text-sm hover:text-gray-400">Home</a></li>
-            <li><a href="#" class="text-sm hover:text-gray-400">Services</a></li>
-            <li><a href="#" class="text-sm hover:text-gray-400">About Us</a></li>
-            <li><a href="#" class="text-sm hover:text-gray-400">Contact</a></li>
+            <li><a href="/" class="text-sm hover:text-gray-400">Home</a></li>
+            <li><a href="about.html" class="text-sm hover:text-gray-400">About Us</a></li>
+            <li><a href="products.html" class="text-sm hover:text-gray-400">Products</a></li>
+            <li><a href="contact.html" class="text-sm hover:text-gray-400">Contact</a></li>
           </ul>
         </div>
 
