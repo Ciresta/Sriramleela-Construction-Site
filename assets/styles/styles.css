@@ -16,31 +16,37 @@
 body {
     overflow-x: hidden;
   }
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%); /* Scroll to the left by 100% of the container width */
+    }
+  }
   
-@keyframes scroll-left {
+  @keyframes scroll-right {
     0% {
-        transform: translateX(0);
+      transform: translateX(0);
     }
-
     100% {
-        transform: translateX(-100%);
+      transform: translateX(100%); /* Scroll to the right by 100% of the container width */
     }
-}
-
-@keyframes scroll-right {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(100%);
-    }
-}
-
-.animate-scroll-left {
+  }
+  
+  .animate-scroll-left {
     animation: scroll-left 10s linear infinite;
-}
-
-.animate-scroll-right {
+  }
+  
+  .animate-scroll-right {
     animation: scroll-right 10s linear infinite;
-}
+  }
+  
+  .overflow-hidden {
+    overflow: hidden;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
