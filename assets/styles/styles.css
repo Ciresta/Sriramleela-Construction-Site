@@ -40,6 +40,7 @@ body {
   
   .animate-scroll-right {
     animation: scroll-right 10s linear infinite;
+    
   }
   
   .overflow-hidden {
